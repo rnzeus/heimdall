@@ -13,11 +13,11 @@ Get the latest build for macOS or Windows at **[heimdall.rnzeus.dev/download](ht
 | Stable | regular releases |
 | Nightly | early builds, marked as pre-release |
 
-The builds are not signed yet. On macOS open the app with right-click → Open the first time; on Windows choose More info → Run anyway.
+The builds are not signed yet. On macOS, open the app once, then go to System Settings → Privacy & Security and choose **Open Anyway** (or run `xattr -cr /Applications/Heimdall.app`). On Windows choose More info → Run anyway.
 
 ## Connect your app
 
-Add the SDK to your React Native app: [`@rnzeus/heimdall-sdk`](https://github.com/rnzeus/heimdall-sdk). Events go straight from the app to Heimdall over your local network.
+Add the SDK to your React Native app: [`@rnzeus/heimdall-sdk`](https://github.com/rnzeus/heimdall-sdk). Events go straight from the app to Heimdall over your local network, encrypted when the app connects through Heimdall cloud.
 
 ## Report a problem
 
