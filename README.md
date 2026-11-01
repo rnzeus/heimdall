@@ -7,7 +7,7 @@ Heimdall is a desktop debug inspector for React Native apps. It shows what your 
 ## What else it does
 
 - **Recorded sessions** — record what the app does and save it as one `.edda` file; open it later on a timeline, with pins and notes.
-- **Bug reports** — press Report when something breaks: Heimdall finds failed requests and errors around that moment, lists the last steps and creates a task in your tracker (ClickUp for now) with the session attached, sensitive data masked.
+- **Bug reports** — press Report when something breaks: Heimdall finds failed requests and errors around that moment, lists the last steps and creates a task in your tracker (ClickUp for now) with the session attached, sensitive data masked. With [`heimdall-lens`](https://github.com/rnzeus/heimdall-lens) in the app, the report also carries screenshots with the taps on them and a GIF of the moment.
 - **Pins and notes** on any request, log line, socket frame or state change.
 
 ![Bug report: failures found automatically and the last activity](https://heimdall.rnzeus.dev/readme/report.png)
@@ -31,10 +31,14 @@ Add the SDK to your React Native app: [`@rnzeus/heimdall-sdk`](https://github.co
 
 Open an [issue](https://github.com/rnzeus/heimdall/issues), or send it from [heimdall.rnzeus.dev/feedback/new](https://heimdall.rnzeus.dev/feedback/new) — reports sent from there show up here too.
 
-## Related
+## Heimdall ecosystem
 
-- [`heimdall-sdk`](https://github.com/rnzeus/heimdall-sdk) — React Native client, MIT
-- [`heimdall-protocol`](https://github.com/rnzeus/heimdall-protocol) — wire protocol between the SDK and the app, MIT
-- [`heimdall-trackers`](https://github.com/rnzeus/heimdall-trackers) — issue tracker adapters for bug reports, MIT
+| | |
+|---|---|
+| [Heimdall desktop](https://heimdall.rnzeus.dev/download) | the inspector for macOS and Windows |
+| [`@rnzeus/heimdall-sdk`](https://github.com/rnzeus/heimdall-sdk) | React Native client: network, WebSocket, state, console |
+| [`@rnzeus/heimdall-lens`](https://github.com/rnzeus/heimdall-lens) | native screenshots and taps for bug reports |
+| [`@rnzeus/heimdall-protocol`](https://github.com/rnzeus/heimdall-protocol) | messages between the SDK and the desktop app |
+| [`@rnzeus/heimdall-trackers`](https://github.com/rnzeus/heimdall-trackers) | issue tracker adapters for bug reports |
 
-The desktop app is free to use. Its source code is not public.
+The packages are MIT. The desktop app is free to use; its source code is not public.
